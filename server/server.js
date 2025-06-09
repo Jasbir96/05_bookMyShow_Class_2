@@ -17,9 +17,11 @@ connectDb(); // Stablish database connection.
 
 // Global Variables.
 const USER_ROUTER = require("./routes/userRouter");
+const MOVIE_ROUTER=require("./routes/movieRouter")
 
 // Routes.
 app.use("/api/users", USER_ROUTER);
+app.use("/api/movies",MOVIE_ROUTER);
 
 
 // Home Page.
